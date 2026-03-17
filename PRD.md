@@ -66,3 +66,17 @@
 * **스타일**: CSS3 (Vanilla CSS, 직접 스타일링)
 * **동적 제어**: JavaScript (ES6+)
 * **제한 사항**: 복잡한 JS 프레임워크(React, Vue 등) 없이 기초 3대 웹 기술만 활용하여 고성능 단일 페이지 구현
+
+## 7. 비기능 요구사항 (Non-Functional Requirements)
+### 7.1. 보안 (Security)
+* **데이터 보호**: 모든 사용자 입력(특히 '문의하기' 폼의 이름, 연락처 등) 전송 시 HTTPS(TLS 1.2 이상)를 통한 종단 간 암호화 통신 필수
+* **입력값 검증 (Validation)**: 클라이언트 측(JavaScript) 및 서버 측(도입 시)에서 특수문자 치환, 이메일/전화번호 형식 검증 등을 통해 XSS(크로스 사이트 스크립팅) 및 SQL 인젝션 방지
+* **개인정보 취급 방침 명시**: 수집하는 개인정보 이용 목적 및 보관 기간에 대한 안내 항목과 동의 체크란 제공 필수
+
+### 7.2. 성능 및 지표 (Performance Metrics)
+* **페이지 로딩 속도 (LCP, Largest Contentful Paint)**: 핵심 메인 이미지 및 텍스트는 2.5초 이내에 렌더링 완료 (3G/LTE 모바일 환경 고려)
+* **상호작용성 (FID, First Input Delay)**: 사용자의 첫 클릭 및 스크롤 이벤트에 100ms 이내로 즉각 반영
+* **시각적 안정성 (CLS, Cumulative Layout Shift)**: 레이아웃 이동 폭 0.1 이하 유지 (이미지 Placeholder 공간 사전 확보 필수)
+* **에셋 최적화**: 
+  * 이미지 포맷 최적화(단일 파일당 500KB 이하 유지, WebP 지원 고려)
+  * CSS/JS 파일 최소화(Minify) 처리 및 비동기(Async) 로드 적용
