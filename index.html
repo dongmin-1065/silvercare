@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvercare Partners Dashboard</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>SILVERCARE</h2>
+        </div>
+        <div class="sidebar-menu">
+            <span class="menu-title">NAVIGATION</span>
+            <ul>
+                <li class="active">
+                    <a href="#"><i class="fa-solid fa-desktop"></i> 대시보드</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-chart-pie"></i> 현황 보고서</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-heart-pulse"></i> 케어 서비스</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-calendar-check"></i> 일정 관리</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-wallet"></i> 결제 및 정산</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-users"></i> 회원 관리</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-people-group"></i> 팀원 소개</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-folder-open"></i> 프로젝트</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-gear"></i> 설정</a>
+                    <i class="fa-solid fa-chevron-right menu-arrow"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="promo-box">
+                <i class="fa-solid fa-headset promo-icon"></i>
+                <h4>무료 상담 신청</h4>
+                <p>전문 상담사가 1:1 맞춤형 생애 설계 상담을 도와드립니다.</p>
+                <button class="btn-primary">신청하기</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Top Navbar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+                <button class="btn-icon-add"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn-mega-menu">MEGA MENU</button>
+            </div>
+            <div class="topbar-right">
+                <button class="btn-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn-icon"><img src="https://placehold.co/24x24/eee/999?text=KR" alt="KR" class="lang-icon"></button>
+                <button class="btn-icon"><i class="fa-solid fa-expand"></i></button>
+                <button class="btn-icon" id="darkModeToggle"><i class="fa-regular fa-moon"></i></button>
+                <button class="btn-icon has-badge">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="badge badge-green">2</span>
+                </button>
+                <button class="btn-icon has-badge">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="badge badge-red">3</span>
+                </button>
+                <div class="user-profile">
+                    <img src="https://placehold.co/40x40/ccc/fff?text=User" alt="User Profile">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="page-title">
+                    <h1>대시보드</h1>
+                    <div class="breadcrumbs">
+                        <span>Home</span> <i class="fa-solid fa-angle-right"></i> <span class="current">Dashboard</span>
+                    </div>
+                </div>
+                <div class="page-actions">
+                    <div class="date-picker">
+                        <span>MAY 1, 24 - MAY 31, 24</span>
+                    </div>
+                    <button class="btn-filter"><i class="fa-solid fa-filter"></i> FILTER</button>
+                </div>
+            </div>
+
+            <!-- Top Cards -->
+            <div class="grid-4 top-cards">
+                <!-- Card 1 -->
+                <div class="card stat-card">
+                    <div class="stat-header">
+                        <div class="icon-box bg-light-gray"><i class="fa-solid fa-user-tie text-gray"></i></div>
+                        <div class="stat-info">
+                            <h3>45/50</h3>
+                            <p>전문 케어 임직원</p>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="stat-footer">
+                        <div class="stat-progress-texts">
+                            <span>근무 중</span>
+                            <span>45명 (90%)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress blue" style="width: 90%;"></div></div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card stat-card">
+                    <div class="stat-header">
+                        <div class="icon-box bg-light-gray"><i class="fa-solid fa-comments text-gray"></i></div>
+                        <div class="stat-info">
+                            <h3>1,532</h3>
+                            <p>누적 상담 건수</p>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="stat-footer">
+                        <div class="stat-progress-texts">
+                            <span>신규 상담</span>
+                            <span>120건 (8%)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress orange" style="width: 25%;"></div></div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card stat-card">
+                    <div class="stat-header">
+                        <div class="icon-box bg-light-gray"><i class="fa-solid fa-hand-holding-heart text-gray"></i></div>
+                        <div class="stat-info">
+                            <h3>156/200</h3>
+                            <p>진행 중인 프로그램</p>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="stat-footer">
+                        <div class="stat-progress-texts">
+                            <span>참여 인원</span>
+                            <span>156명 (78%)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress green" style="width: 78%;"></div></div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card stat-card">
+                    <div class="stat-header">
+                        <div class="icon-box bg-light-gray"><i class="fa-solid fa-chart-line text-gray"></i></div>
+                        <div class="stat-info">
+                            <h3>98.5%</h3>
+                            <p>고객 만족도</p>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="stat-footer">
+                        <div class="stat-progress-texts">
+                            <span>매우 만족</span>
+                            <span>1,450명 (95%)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress red" style="width: 95%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="grid-layout-middle">
+                <!-- Main Chart Card -->
+                <div class="card chart-card">
+                    <div class="card-header">
+                        <h2>월별 서비스 이용 현황</h2>
+                        <button class="btn-more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="chart-container">
+                        <!-- Mocking the bar/line chart using pure HTML/CSS -->
+                        <div class="mock-chart">
+                            <div class="y-axis">
+                                <span>70K</span><span>60K</span><span>50K</span><span>40K</span><span>30K</span><span>20K</span><span>10K</span><span>0K</span>
+                            </div>
+                            <div class="chart-bars-area">
+                                <svg class="mock-line" preserveAspectRatio="none" viewBox="0 0 1000 300">
+                                    <path d="M0,250 C100,100 200,300 300,50 C400,200 500,250 600,100 C700,280 800,50 900,150 L1000,200" fill="none" stroke="#e0e0e0" stroke-width="4" />
+                                </svg>
+                                <div class="chart-bars">
+                                    <div class="bar-group"><div class="bar light" style="height: 60%;"></div><div class="bar dark" style="height: 35%;"></div><span>JAN/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 75%;"></div><div class="bar dark" style="height: 15%;"></div><span>FEB/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 55%;"></div><div class="bar dark" style="height: 30%;"></div><span>MAR/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 90%;"></div><div class="bar dark" style="height: 40%;"></div><span>APR/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 35%;"></div><div class="bar dark" style="height: 25%;"></div><span>MAY/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 60%;"></div><div class="bar dark" style="height: 35%;"></div><span>JUN/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 50%;"></div><div class="bar dark" style="height: 55%;"></div><span>JUL/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 55%;"></div><div class="bar dark" style="height: 25%;"></div><span>AUG/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 80%;"></div><div class="bar dark" style="height: 65%;"></div><span>SEP/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 40%;"></div><div class="bar dark" style="height: 30%;"></div><span>OCT/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 60%;"></div><div class="bar dark" style="height: 45%;"></div><span>NOV/24</span></div>
+                                    <div class="bar-group"><div class="bar light" style="height: 85%;"></div><div class="bar dark" style="height: 35%;"></div><span>DEC/24</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-footer">
+                        <div class="stat-box">
+                            <span class="label">생애 설계 상담</span>
+                            <span class="value">5,486</span>
+                            <div class="line blue"></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">일상생활 지원</span>
+                            <span class="value">9,275</span>
+                            <div class="line green"></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">법률·행정 연계</span>
+                            <span class="value">3,868</span>
+                            <div class="line red"></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">총 서비스 이용</span>
+                            <span class="value">50,668</span>
+                            <div class="line dark"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Blue Card & List -->
+                <div class="side-widget">
+                    <!-- Blue Banner Card -->
+                    <div class="card blue-card">
+                        <div class="blue-card-header">
+                            <div>
+                                <h2>12,569</h2>
+                                <p>프리미엄 케어 이용자</p>
+                            </div>
+                            <span class="badge-white">12% <i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="blue-card-wave">
+                            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                                <path d="M0.00,49.98 C150.00,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgba(255,255,255,0.2);"></path>
+                                <path d="M0.00,79.98 C150.00,170.00 350.20,-29.98 500.00,79.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgba(255,255,255,0.4);"></path>
+                            </svg>
+                        </div>
+                        <!-- Mini settings gear attached to edge -->
+                        <div class="gear-icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+
+                    <!-- Services List Card -->
+                    <div class="card list-card">
+                        <ul class="service-list">
+                            <li>
+                                <div class="s-icon bg-light-green"><i class="fa-solid fa-book-open text-green"></i></div>
+                                <div class="s-info">
+                                    <h4>디지털 자서전 제작</h4>
+                                    <p>프리미엄 인생 기록</p>
+                                </div>
+                                <div class="s-stats">
+                                    <strong>$1200</strong>
+                                    <span>6 Projects</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="s-icon bg-light-blue"><i class="fa-solid fa-stethoscope text-blue"></i></div>
+                                <div class="s-info">
+                                    <h4>의료 케어 매니지먼트</h4>
+                                    <p>병원 동행 서비스</p>
+                                </div>
+                                <div class="s-stats">
+                                    <strong>$1450</strong>
+                                    <span>3 Projects</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="s-icon bg-light-red"><i class="fa-solid fa-spa text-red"></i></div>
+                                <div class="s-info">
+                                    <h4>장례 토탈 케어</h4>
+                                    <p>사전 장례 준비</p>
+                                </div>
+                                <div class="s-stats">
+                                    <strong>$1250</strong>
+                                    <span>5 Projects</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer-action">
+                            <a href="#">FULL DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Cards -->
+            <div class="grid-3 bottom-cards mt-20">
+                <div class="card mini-chart-card">
+                    <div class="m-card-header">
+                        <div class="m-icon"><i class="fa-regular fa-star"></i></div>
+                        <div class="m-info">
+                            <h4>Tasks Completed</h4>
+                            <p>22/35 completed</p>
+                        </div>
+                        <h2>22/35</h2>
+                    </div>
+                    <div class="m-chart">
+                        <svg viewBox="0 0 200 50" preserveAspectRatio="none" style="width: 100%; height: 60px;">
+                            <path d="M0,50 Q25,10 50,30 T100,20 T150,40 T200,10 L200,50 L0,50 Z" fill="url(#gradBlue)" opacity="0.2"/>
+                            <path d="M0,50 Q25,10 50,30 T100,20 T150,40 T200,10" fill="none" stroke="#3a57e8" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradBlue" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#3a57e8" />
+                                    <stop offset="100%" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card mini-chart-card">
+                    <div class="m-card-header">
+                        <div class="m-icon"><i class="fa-regular fa-file"></i></div>
+                        <div class="m-info">
+                            <h4>New Tasks</h4>
+                            <p>0/20 tasks</p>
+                        </div>
+                        <h2>5/20</h2>
+                    </div>
+                    <div class="m-chart">
+                        <svg viewBox="0 0 200 50" preserveAspectRatio="none" style="width: 100%; height: 60px;">
+                            <path d="M0,40 Q30,50 60,20 T120,40 T160,10 T200,30 L200,50 L0,50 Z" fill="url(#gradGreen)" opacity="0.2"/>
+                            <path d="M0,40 Q30,50 60,20 T120,40 T160,10 T200,30" fill="none" stroke="#10b981" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradGreen" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#10b981" />
+                                    <stop offset="100%" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card mini-chart-card">
+                    <div class="m-card-header">
+                        <div class="m-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <div class="m-info">
+                            <h4>Project Done</h4>
+                            <p>20/30 project</p>
+                        </div>
+                        <h2>20/30</h2>
+                    </div>
+                    <div class="m-chart">
+                        <svg viewBox="0 0 200 50" preserveAspectRatio="none" style="width: 100%; height: 60px;">
+                            <path d="M0,30 Q40,10 80,40 T140,20 T200,40 L200,50 L0,50 Z" fill="url(#gradRed)" opacity="0.2"/>
+                            <path d="M0,30 Q40,10 80,40 T140,20 T200,40" fill="none" stroke="#ef4444" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradRed" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#ef4444" />
+                                    <stop offset="100%" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
