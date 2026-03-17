@@ -1,6 +1,6 @@
 /* Base Variables & Reset to match Image */
 :root {
-    --bg-main: #f5f6fa;
+    --bg-main: #ffe4e1; /* Pastel Pink (Misty Rose) */
     --bg-white: #ffffff;
     --primary-blue: #3a57e8;
     --text-dark: #212529;
